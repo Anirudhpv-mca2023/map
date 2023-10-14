@@ -1,9 +1,8 @@
 # map
-Moves two pupils to the cursor position, while keeping them centered on the cursor.The code uses the clientX and clientY properties of the event object to get the cursor's position relative to the browser window.The code then calculates the pupil's new position as a percentage of the browser window's width and height.Finally, the code uses the translate() CSS transform to move the pupils to their new positions.This code can be used to create a variety of effects, such as making a character's eyes follow the cursor, or making a cursor appear to be followed by two pupils.
+Animates a bus marker along a route using Mapbox GL JS.The code creates a Mapbox GL map and adds a marker to it then uses a recursive setTimeout() function to move the marker to the next stops the animation when the marker reaches the last bus stop in the array.bus stop in the array every 1000ms.This code can be used to create simple animations of buses, cars, or other objects moving along a route.
 
-Steps to Run the Project
-Add the code to a web page. You can do this by creating a new <script> tag and pasting the code into it.Add two elements with the class pupil to the web page. You can do this by adding any HTML element, such as a
-or  element, and giving it the class pupil.Open the web page in a web browser.Move the mouse cursor around the web page.
+Steps to Run the Project:
+Create an HTML file. Create a new file with the .html extension, and add the following code to it.Save the JavaScript code. Create a new file with the .js extension, and paste the given code into it. Save the file as bus_animation.js.Open the HTML file in a web browser. Open the HTML file in your web browser of choice.See the bus animation! You should see a map with a bus marker at the first bus stop in the array. The marker will then be animated to the next bus stop every 1000ms.
 
 Future Improvements:
-Make the pupils follow the cursor more smoothly.Add support for multiple cursors
+Instead of using a pre-defined array of bus stops, the bus could follow a real-time route, such as the route of a real bus. This could be done by using a real-time bus tracking API to get the bus's current location and destination.
